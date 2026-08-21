@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<title>SchoolTrack | Transporte Escolar Inteligente</title>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🚌 School<span>Track</span>
+    </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#prototipo">Protótipo</a>
+        <a href="#funcionamento">Funcionamento</a>
+        <a href="#impacto">Impacto</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+        <div class="tag">
+            HACKATHON • MOBILIDADE • EDUCAÇÃO
+        </div>
+
+        <h1>
+            Transporte escolar
+            <span>inteligente.</span>
+        </h1>
+
+        <p>
+            Uma plataforma que conecta alunos, responsáveis,
+            motoristas e escolas em um único sistema,
+            tornando o transporte escolar mais organizado,
+            transparente e seguro.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#prototipo" class="btn primary">
+                Ver protótipo
+            </a>
+
+            <a href="#funcionamento" class="btn secondary">
+                Como funciona
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CELULAR -->
+
+    <div class="phone">
+
+        <div class="phone-top">
+            SCHOOLTRACK
+        </div>
+
+        <div class="app-header">
+
+            <strong>Olá, Ana 👋</strong>
+
+            <div class="notification-icon">
+                🔔
+            </div>
+
+        </div>
+
+        <div class="map">
+
+            <div class="bus-marker">
+                🚌
+            </div>
+
+        </div>
+
+        <div class="route-info">
+
+            <small>Ônibus escolar</small>
+
+            <strong>
+                Ônibus #024
+            </strong>
+
+            <div class="status-online">
+                ● Em rota
+            </div>
+
+        </div>
+
+        <div class="route-info">
+
+            <small>Próxima parada</small>
+
+            <strong>
+                Avenida Brasil
+            </strong>
+
+            <small>
+                Chegada estimada: 08:12
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROTÓTIPO -->
+
+<section class="prototype" id="prototipo">
+
+    <div class="section-title">
+
+        <h2>Protótipo do aplicativo</h2>
+
+        <p>
+            Clique nas opções abaixo para navegar pelas telas do sistema.
+        </p>
+
+    </div>
+
+
+    <div class="screen-selector">
+
+        <button class="active" onclick="showScreen('home',this)">
+            🏠 Início
+        </button>
+
+        <button onclick="showScreen('mapa',this)">
+            🗺️ Mapa
+        </button>
+
+        <button onclick="showScreen('aluno',this)">
+            👆 Identificação
+        </button>
+
+        <button onclick="showScreen('motorista',this)">
+            👨‍✈️ Motorista
+        </button>
+
+        <button onclick="showScreen('notificacoes',this)">
+            🔔 Notificações
+        </button>
+
+        <button onclick="showScreen('chegada',this)">
+            🎓 Chegada
+        </button>
+
+    </div>
+
+
+    <div class="prototype-container">
+
+        <div class="app-screen">
+
+
+            <!-- TELA 1 -->
+
+            <div class="screen active" id="home">
+
+                <div class="screen-title">
+
+                    <h3>Olá, Ana 👋</h3>
+
+                    <span class="online">
+                        ● Sistema online
+                    </span>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <div class="card-icon">🚌</div>
+
+                        <h4>Ônibus #024</h4>
+
+                        <p>
+                            Atualmente em rota.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-icon">📍</div>
+
+                        <h4>Próxima parada</h4>
+
+                        <p>
+                            Avenida Brasil
+                            <br>
+                            08:12
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-icon">🎓</div>
+
+                        <h4>Destino</h4>
+
+                        <p>
+                            Escola Municipal
+                            <br>
+                            08:30
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TELA MAPA -->
+
+            <div class="screen" id="mapa">
+
+                <div class="screen-title">
+
+                    <h3>🗺️ Acompanhar ônibus</h3>
+
+                    <span class="online">
+                        ● AO VIVO
+                    </span>
+
+                </div>
+
+
+                <div class="big-map">
+
+                    <div class="big-route"></div>
+
+                    <div class="map-point point1"></div>
+                    <div class="map-point point2"></div>
+                    <div class="map-point point3"></div>
+                    <div class="map-point point4"></div>
+
+                    <div class="big-bus">
+                        🚌
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TELA ALUNO -->
+
+            <div class="screen" id="aluno">
+
+                <div class="screen-title">
+
+                    <h3>👆 Identificação do aluno</h3>
+
+                    <span class="online">
+                        SISTEMA ATIVO
+                    </span>
+
+                </div>
+
+
+                <div class="success">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Aluno identificado
+                    </h3>
+
+                    <p>
+                        Entrada registrada no ônibus #024.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Horário: <strong>08:02</strong>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Responsável notificado.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TELA MOTORISTA -->
+
+            <div class="screen" id="motorista">
+
+                <div class="screen-title">
+
+                    <h3>👨‍✈️ Painel do motorista</h3>
+
+                    <span class="online">
+                        ROTA ATIVA
+                    </span>
+
+                </div>
+
+
+                <div class="driver-dashboard">
+
+                    <div class="driver-card">
+
+                        <h4>Próxima parada</h4>
+
+                        <div class="next-stop">
+
+                            <div class="big">
+                                📍
+                            </div>
+
+                            <h4>
+                                Avenida Brasil
+                            </h4>
+
+                            <p>
+                                Chegada prevista: 08:12
+                            </p>
+
+                            <p>
+                                1 aluno irá embarcar
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="driver-card">
+
+                        <h4>Alunos da rota</h4>
+
+                        <br>
+
+                        <div class="student">
+
+                            <div class="student-left">
+
+                                <div class="avatar">
+                                    A
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Ana
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        Identificada
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <span class="confirmed">
+                                ✓
+                            </span>
+
+                        </div>
+
+
+                        <div class="student">
+
+                            <div class="student-left">
+
+                                <div class="avatar">
+                                    B
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Bruno
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        Próxima parada
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <span class="waiting">
+                                ●
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICAÇÕES -->
+
+            <div class="screen" id="notificacoes">
+
+                <div class="screen-title">
+
+                    <h3>
+                        🔔 Notificações
+                    </h3>
+
+                </div>
+
+
+                <div class="notification">
+
+                    <small>
+                        08:02
+                    </small>
+
+                    <p>
+                        <strong>Aluno identificado</strong>
+                    </p>
+
+                    <p>
+                        Ana entrou no ônibus #024.
+                    </p>
+
+                </div>
+
+
+                <div class="notification">
+
+                    <small>
+                        08:16
+                    </small>
+
+                    <p>
+                        <strong>Ônibus próximo</strong>
+                    </p>
+
+                    <p>
+                        O ônibus está chegando à próxima parada.
+                    </p>
+
+                </div>
+
+
+                <div class="notification">
+
+                    <small>
+                        08:29
+                    </small>
+
+                    <p>
+                        <strong>Chegada à escola</strong>
+                    </p>
+
+                    <p>
+                        O ônibus chegou ao destino.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHEGADA -->
+
+            <div class="screen" id="chegada">
+
+                <div class="success">
+
+                    <div class="success-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Aluno chegou à escola!
+                    </h3>
+
+                    <p>
+                        O sistema registrou a chegada do ônibus
+                        à Escola Municipal.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Horário registrado:
+                        <strong>08:29</strong>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        O responsável recebeu uma notificação.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FUNCIONAMENTO -->
+
+<section id="funcionamento">
+
+    <div class="section-title">
+
+        <h2>Como o SchoolTrack funciona?</h2>
+
+        <p>
+            Do momento em que o aluno entra no ônibus até sua chegada.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="number">
+                1
+            </div>
+
+            <h3>
+                Entrada
+            </h3>
+
+            <p>
+                O aluno realiza sua identificação
+                ao entrar no ônibus.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                2
+            </div>
+
+            <h3>
+                Registro
+            </h3>
+
+            <p>
+                O sistema registra a entrada
+                e associa o aluno à viagem.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                3
+            </div>
+
+            <h3>
+                Notificação
+            </h3>
+
+            <p>
+                O responsável recebe uma
+                notificação pelo aplicativo.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                4
+            </div>
+
+            <h3>
+                Chegada
+            </h3>
+
+            <p>
+                O sistema informa quando o aluno
+                chega ao destino.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IMPACTO -->
+
+<section class="impact" id="impacto">
+
+    <div class="section-title">
+
+        <h2>Impacto da solução</h2>
+
+        <p>
+            Uma proposta pensada para alunos, famílias,
+            motoristas e escolas.
+        </p>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+        <div class="impact-card">
+
+            <strong>01</strong>
+
+            <p>
+                Mais tranquilidade
+                para os responsáveis
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <strong>02</strong>
+
+            <p>
+                Melhor organização
+                das rotas
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <strong>03</strong>
+
+            <p>
+                Comunicação
+                em tempo real
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <strong>04</strong>
+
+            <p>
+                Mais controle
+                para a escola
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="cta">
+
+    <h2>
+        O futuro do transporte escolar começa aqui.
+    </h2>
+
+    <p>
+        SchoolTrack une mobilidade, tecnologia e comunicação
+        para transformar a experiência do transporte escolar.
+    </p>
+
+    <a href="#prototipo" class="btn primary">
+        Experimentar o protótipo
+    </a>
+
+</section>
+
+
+<footer>
+
+    🚌 SchoolTrack • Projeto de Hackathon • 2026
+
+</footer>
+
+
+<script>
+
+/* SISTEMA DE NAVEGAÇÃO DO PROTÓTIPO */
+
+function showScreen(screenId, button){
+
+    /* Esconde todas as telas */
+
+    const screens = document.querySelectorAll(".screen");
+
+    screens.forEach(screen => {
+        screen.classList.remove("active");
+    });
+
+
+    /* Mostra a tela escolhida */
+
+    document.getElementById(screenId).classList.add("active");
+
+
+    /* Remove seleção dos botões */
+
+    const buttons = document.querySelectorAll(".screen-selector button");
+
+    buttons.forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+
+    /* Seleciona o botão atual */
+
+    button.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
